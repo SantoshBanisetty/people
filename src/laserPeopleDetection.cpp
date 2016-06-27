@@ -212,7 +212,7 @@ void laserCallBack(const sensor_msgs::LaserScan::ConstPtr & laserMsg)
 			pt1.y = cvRound(y0 + 1000*(a));
 			pt2.x = cvRound(x0 - 1000*(-b));
 			pt2.y = cvRound(y0 - 1000*(a));
-			line( img, pt1, pt2, Scalar(0,0,255), 2, CV_AA);
+			line( img, pt1, pt2, Scalar(255,255,255), 4, CV_AA);
 		}
     }
 
